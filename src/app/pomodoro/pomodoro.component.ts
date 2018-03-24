@@ -53,7 +53,7 @@ export class PomodoroComponent implements OnInit {
         console.log(this.m);
         this.timeToWork = false;
         this.timeForBreak = true;
-        this.procrastinationTime = 'Look away from the screen!';
+        this.procrastinationTime = 'You can procrastinate now :)';
         this._document.getElementById('appFavicon').setAttribute('href', '/assets/icon/green.ico');
       }
     }

@@ -2,7 +2,7 @@
 
 This is a simple Angular 2 project which will help you to be more productive and focus more on important things.
 
-You can find a working example of this module [here](http://bit.ly/2pF1iTV).
+You can find a working example of this module [here](http://bit.ly/2pCCm0l).
 
 ## What is Pomodoro?
 The Pomodoro technique is a personal time management method. The Pomodoro is coming out of scientific studies which suggest
