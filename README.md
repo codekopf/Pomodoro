@@ -1,27 +1,46 @@
 # Pomodoro
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
+This is a simple Angular 2 project which will help you to be more productive and focus more on important things.
 
-## Development server
+You can find a working example of this module [here](http://bit.ly/2pF1iTV).
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## What is Pomodoro?
+The Pomodoro technique is a personal time management method. The Pomodoro is coming out of scientific studies which suggest
+that human focus starts drop-down significantly after 20 minutes. It has four simple rules with an emphasis on maximal productivity:
 
-## Code scaffolding
+1. Choose a task you would like to.
+2. Work uninterrupted for 25 minutes.
+3. Take a break for 5 minutes.
+4. After four sessions, take a longer break.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+You can find more information on [wikipedia](https://en.wikipedia.org/wiki/Pomodoro_Technique).
 
-## Build
+Countdown first 25 minutes when you should focus on your tasks:
+![alt text](https://raw.githubusercontent.com/codekopf/pomodoro/master/pomodoro-work.png)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+5 minutes break when you can procrastinate:  
+![alt text](https://raw.githubusercontent.com/codekopf/pomodoro/master/pomodoro-break.png)
 
-## Running unit tests
+Loop repeat infinitely. If you leave and return, you can hit the reset button to reset the counter.    
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## How to run it?
 
-## Running end-to-end tests
+This project was generated with Angular CLI, so there is a lot of redundant code.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+If you want to run module locally, first download it and then, if you have installed Angular CLI, just run in your terminal `ng serve` command in the download folder. Navigate to address `http://localhost:4200/` in your browser and have the tab opened during your work with the computer screen. 
 
-## Further help
+If you want to develop other Angular apps alongside, rewrite port number in package.json or run `ng serve --port arbitrary_port_number`.  
+ 
+If you are new to running Angular apps here is [official documentation](https://angular.io/guide/setup) for how to run the Angular app.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Demo
+I have build production version of this module and attached files into this GitHub repository. 
+You can check this module straight from your browser anytime you want. Check the page http://htmlpreview.github.io/?https://github.com/codekopf/pomodoro/blob/master/dist/index.html .
+
+## TODO
+* Implement possibility to pick own duration
+* Implement possibility to pick up 20 + 5 option session
+* After four Pomodoro loops make 20 minutes break
+* Have three buttons - Start, Stop, Reset - with similar functionality as https://tomato-timer.com/
+* Have an option to see which loop (1-4) is currently looping 
+* Fix favicons

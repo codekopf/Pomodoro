@@ -47,10 +47,10 @@ export class PomodoroComponent implements OnInit {
         this.minute = ('0' + this.m).slice(-2);
       } else {
         this.setToTest();
-        // this.resetMinutesTo5();
-        // this.resetMinuteTo00Seconds();
-        // console.log(this.s);
-        // console.log(this.m);
+        this.resetMinutesTo5();
+        this.resetMinuteTo00Seconds();
+        console.log(this.s);
+        console.log(this.m);
         this.timeToWork = false;
         this.timeForBreak = true;
         this.procrastinationTime = 'Look away from the screen!';
@@ -75,37 +75,10 @@ export class PomodoroComponent implements OnInit {
         this.resetMinuteTo00Seconds();
         this.timeToWork = true;
         this.timeForBreak = false;
-        this.procrastinationTime = 'Look away from the screen!';
+        this.procrastinationTime = '';
         this._document.getElementById('appFavicon').setAttribute('href', '/assets/icon/green.ico');
       }
     }
-    // console.log('Look Away');
-    // // original
-    // this.s = this.s + 1;
-    // // test
-    // // this.s = this.s + 60;
-    // if ( this.s % 60 === 0) {
-    //   this.s = 0;
-    //   this.second = ('0' + this.s).slice(-2);
-    //   // original
-    //   this.m = this.m + 1;
-    //   // test
-    //   // this.m = this.m + 5;
-    //   this.minute = ('0' + this.m).slice(-2);
-    //   if (this.m % 5 === 0) {
-    //     this.s = 0;
-    //     this.second = ('0' + this.s).slice(-2);
-    //     this.s = 0;
-    //     this.m = 0;
-    //     this.second = '00';
-    //     this.minute = '00';
-    //     this.timeToWork = true;
-    //     this.timeForBreak = false;
-    //     this.procrastinationTime = '';
-    //     this._document.getElementById('appFavicon').setAttribute('href', '/assets/icon/blue.ico');
-    //   }
-    // }
-    // this.second = ('0' + this.s).slice(-2);
   }
 
   resetClock() {
@@ -144,9 +117,5 @@ export class PomodoroComponent implements OnInit {
   startPomodoro() {
     this.resetClock()
     this.run = true;
-  }
-
-  stopPomodoro() {
-    this.run = false;
   }
 }
