@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { PomodoroComponent } from './pomodoro/pomodoro.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PomodoroComponent
   ],
   imports: [
     BrowserModule
